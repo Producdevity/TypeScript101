@@ -12,14 +12,12 @@
  * - null
  */
 
-// replace the anys to create a valid JSON
+// replace the type definition to create a valid JSON
 
-type JSONPrimitive = number | string | boolean | null;
-type Aaa = "aaa" | "bbb" | "ccc";
-type JSONObject = {[key: string]: JSONValue }
-type JSONObjdect = {[key in Aaa]: JSONValue }
-type JSONArray = Array<JSONValue>
-type JSONValue = JSONPrimitive | JSONObject | JSONArray
+type JSONPrimitive = undefined
+type JSONObject = undefined
+type JSONArray = undefined
+type JSONValue = undefined
 
 // ===============================
 // Don't change below these lines
@@ -34,7 +32,6 @@ isJSON(false);
 isJSON(true);
 isJSON(null);
 isJSON({ a: { b: [2, 3, 'foo'] } });
-isJSON({ a: { b: [{name: 'test'}, {name: 'test'}, 'foo'] } });
 
 // NEGATIVE test cases (must fail)
 // @ts-expect-error

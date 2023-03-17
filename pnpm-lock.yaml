@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '-': ^0.0.1
+  '@types/node': ^18.15.3
   g: ^2.0.1
   pnpm: ^7.29.3
   prettier: ^2.8.4
@@ -13,6 +14,7 @@ dependencies:
   pnpm: 7.29.3
 
 devDependencies:
+  '@types/node': 18.15.3
   prettier: 2.8.4
   typescript: 4.9.5
 
@@ -21,6 +23,10 @@ packages:
   /-/0.0.1:
     resolution: {integrity: sha512-3HfneK3DGAm05fpyj20sT3apkNcvPpCuccOThOPdzz8sY7GgQGe0l93XH9bt+YzibcTIgUAIMoyVJI740RtgyQ==}
     dev: false
+
+  /@types/node/18.15.3:
+    resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
+    dev: true
 
   /g/2.0.1:
     resolution: {integrity: sha512-Fi6Ng5fZ/ANLQ15H11hCe+09sgUoNvDEBevVgx3KoYOhsH5iLNPn54hx0jPZ+3oSWr+xajnp2Qau9VmPsc7hTA==}
