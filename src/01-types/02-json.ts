@@ -14,10 +14,11 @@
 
 // replace the type definition to create a valid JSON
 
-type JSONPrimitive = undefined
-type JSONObject = undefined
-type JSONArray = undefined
-type JSONValue = undefined
+// all json primitives like strings and numbers
+type JSONPrimitive = string | number | boolean | null
+type JSONObject = { [key: string]: JSONValue }
+type JSONArray = JSONValue[]
+type JSONValue = JSONPrimitive | JSONObject | JSONArray
 
 // ===============================
 // Don't change below these lines
