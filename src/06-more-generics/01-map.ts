@@ -1,6 +1,16 @@
 // write the map function so the following works
 
-const theMap = () => {};
+// const theMap = () => {};
+function theMap<T, U>(
+  arr: T[],
+  mapper: (value: T, index: number, array: T[]) => U
+): U[] {
+  const result: U[] = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(mapper(arr[i], i, arr));
+  }
+  return result;
+}
 
 
 // ===============================
