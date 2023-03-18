@@ -1,30 +1,19 @@
-// use intersection types to convert the timestamp into another object
-
 type BirthdayFromBackend = {
   epochMs: number;
 };
 
-const albertsBirthday = {
+const elonMusksBirthday = {
   epochMs: 652602938824,
 };
 
 // create a type for a function that "extends" the Birthday type to a Date
-type BirthdayFromBackendWithDate = BirthdayFromBackend & {
-  jsDate: Date;
-}
+type ToDate = undefined
 
-
-type ToDate = (birthday: BirthdayFromBackend) => BirthdayFromBackendWithDate;
 
 // implement the function that uses this type
-const calculateDateFromEpochMs: ToDate = (albertsBirthday) => {
-  return {
-    ...albertsBirthday,
-    jsDate: new Date(albertsBirthday.epochMs),
-  };
-}
+const calculateDateFromEpochMs: ToDate = undefined
 
 // ===============================
 // Don't change below these lines
 // ===============================
-console.log(calculateDateFromEpochMs(albertsBirthday).jsDate.getUTCDate());
+console.log(calculateDateFromEpochMs(elonMusksBirthday).jsDate.getUTCDate());
