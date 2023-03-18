@@ -5,7 +5,7 @@ export type AddStrings = (a: string, b: string) => string;
 
 
 // answer
-export type Add<T> = undefined
+export type Add<T> = (a: T, b: T) => T;
 
 // tests
 
