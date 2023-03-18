@@ -2,7 +2,7 @@
 // - the expected return type as shown in `loadData`
 // - the return type `undefined` when `!resp.ok`
 type GetDataReturnType = void
-async function getData(url: string): GetDataReturnType {
+async function getData(url: string): Promise<GetDataReturnType> {
   const resp = await fetch(url);
   if (resp.ok) {
     const data = await resp.json();

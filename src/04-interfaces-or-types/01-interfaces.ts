@@ -2,6 +2,7 @@
 window.document;
 
 interface Window {
+  inputElement: HTMLInputElement;
 }
 
 window.inputElement;
